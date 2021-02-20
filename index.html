@@ -44,21 +44,17 @@
                 </span>
             </div>
 
-            <form class="" action="foods.html" method="get">
+            <form action="foods.php" method="post">
                 <div>
                     <label for="">First and Last Name</label>
-                    <input type="text" id="firstlast" value="">
-                    <script>
-                        var input = document.getElementById('firstlast')
-                        localStorage.setItem("firstlast", input);
-                    </script>
+                    <input type="text" name="name" id="inputName">
                 </div>
                 <div>
                     <label for="">Address</label>
                     <input type="text" id="address" value="">
                     <script>
-                        var input = document.getElementById('address')
-                        localStorage.setItem("address", input);
+                        var addressInput = document.getElementById('address');
+                        localStorage.setItem('address', 'addressInput');
                     </script>
                 </div>
                 <div>
@@ -72,12 +68,3 @@
 
     </body>
 </html>
-
-<!--
-<form method="post" action="submit.php" class="form">
-    <label for="name">First and Last Name:</label>
-    <input type="text" id="name" name="name"><br>
-    <input type="submit" value="Submit">
-
-</form>
--->

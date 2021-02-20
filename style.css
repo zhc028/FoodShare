@@ -84,3 +84,8 @@ nav ul li a{
     margin-bottom: 10px;
     color: #545454;
 }
+
+#map{
+    height: 400px;
+    width: 100%;
+}

@@ -23,9 +23,8 @@
                 <h1>This is the 2nd page</h1>
                 <h2>It'll be a database of available foods</h2>
             </div>
-            <script>
-               console.log(localStorage.getItem("firstlast"));
-            </script>
+            <p>Name: <?php echo $_POST["name"]?></p>
+            <p>Address: <?php echo $_POST["address"]?></p>
             <script>
                 const resultsList = document.getElementById('results')
                 new URLSearchParams(window.location.search).forEach((value, name) => {
@@ -33,6 +32,41 @@
                     resultsList.append(document.createElement('br'))
                 })
             </script>
+
+
+            <h1>My Google Map</h1>
+            <div id="map">
+
+            </div>
+
+            <script>
+                function initMap() {
+                    var options = {
+                        zoom: 8,
+                        center:{lat:32.8801,lng:-117.2340}
+                    }
+                    var map = new google.maps.Map(document.getElementById('map'), options);
+                }
+            </script>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFZXLNj0exYOlKq2aSYh3BPcshAeQjlNg&callback=initMap&libraries=&v=weekly"
+            async
+            ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
 
