@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Foodshare</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="images/fslogo.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="">Form</a></li>
+                        <li><a href="secondpg.html">Foods</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content">
+                <h1>Hello! <br>Welcome to FoodShare.</h1>
+                <span style="font-family:Geneva">
+                    <!-- Do we need this?
+                    <h2>Here are the facts:</h2>
+                    <ul>
+                        <li>Americans discard nearly 40 tons of food every year.</li>
+                        <li>30-40% of the US food supply is wasted.</li>
+                        <li>Food is the single largest component taking up space inside US landfills.</li>
+                    </ul>
+                    <h2>Where do we go from here?</h2>
+                    -->
+                    <p>With FoodShare, we hope to reduce food waste by reallocating it to those who need it the most.
+                    </p>
+                    <p><i>Do you have groceries in the fridge that you don't plan on using?
+                        <br>Leftovers from a large family gathering?
+                        <br>Maybe you own a restaurant, and you have leftover food at the end of the night?</i><br>
+                    </p>
+                    <p>It's simple. Fill out your contact information in the form, include details about the food you are
+                        <br>sharing, and submit. Your food will be added to a list viewable by local food banks and soup
+                        <br>kitchens, who will arrange to pick it up and redistribute it to those in need.
+                    </p>
+                </span>
+
+
+            </div>
+
+            <form method="post" action="submit.php" class="form">
+                <label for="name">First and Last Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
