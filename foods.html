@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>Foodshare</title>
         <link rel="stylesheet" href="style.css">
+        <!--<link rel='icon' href='images/favicon.ico' type='image/x-icon'/ > -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
     <body>
         <div class="container">
@@ -21,6 +23,16 @@
                 <h1>This is the 2nd page</h1>
                 <h2>It'll be a database of available foods</h2>
             </div>
+            <script>
+               console.log(localStorage.getItem("firstlast"));
+            </script>
+            <script>
+                const resultsList = document.getElementById('results')
+                new URLSearchParams(window.location.search).forEach((value, name) => {
+                    resultsList.append(`${name}: ${value}`)
+                    resultsList.append(document.createElement('br'))
+                })
+            </script>
 
         </div>
 

@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>Foodshare</title>
         <link rel="stylesheet" href="style.css">
+        <!--<link rel='icon' href='images/favicon.ico' type='image/x-icon'/ > -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
     <body>
         <div class="container">
@@ -12,7 +14,7 @@
                 <nav>
                     <ul>
                         <li><a href="">Form</a></li>
-                        <li><a href="secondpg.html">Foods</a></li>
+                        <li><a href="foods.html">Foods</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,18 +42,42 @@
                         <br>kitchens, who will arrange to pick it up and redistribute it to those in need.
                     </p>
                 </span>
-
-
             </div>
 
-            <form method="post" action="submit.php" class="form">
-                <label for="name">First and Last Name:</label>
-                <input type="text" id="name" name="name"><br>
-                <input type="submit" value="Submit">
-
+            <form class="" action="foods.html" method="get">
+                <div>
+                    <label for="">First and Last Name</label>
+                    <input type="text" id="firstlast" value="">
+                    <script>
+                        var input = document.getElementById('firstlast')
+                        localStorage.setItem("firstlast", input);
+                    </script>
+                </div>
+                <div>
+                    <label for="">Address</label>
+                    <input type="text" id="address" value="">
+                    <script>
+                        var input = document.getElementById('address')
+                        localStorage.setItem("address", input);
+                    </script>
+                </div>
+                <div>
+                    <label for="">Food Type</label> <!-- maybe a drop-down menu here? or use Spoonacular API to generate a searchable food list -->
+                    <input type="text" name="food_type" value="">
+                </div>
+                <button type="button" name="button">Submit</button>
             </form>
 
         </div>
 
     </body>
 </html>
+
+<!--
+<form method="post" action="submit.php" class="form">
+    <label for="name">First and Last Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <input type="submit" value="Submit">
+
+</form>
+-->
