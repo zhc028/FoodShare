@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("images/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    /*padding-left: 850px;*/
+    padding-left:65%;
+    white-space: nowrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #545454;
+    margin: 0px 20px;
+    font-size: 25px
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: #c79376;
+
+}
+.content h2{
+    font-size: 23px;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #545454;
+}
+
+.content ul{
+    list-style: circle;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    color: #545454;
+}
+
+.form{
+    position: absolute;
+    bottom: 400px;
+    right: 200px;
+}
+
+.form-wrap{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 60px 40px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 78%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.form-wrap h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #84a59d;
+    text-align: center;
+}
+
+.form-wrap input{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #545454;
+
+    padding: 6px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.form-wrap button{
+    background-color: #84a59d;
+    border: none;
+    color: #FFFFFF;
+    padding: 6px 20px;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-wrap label {
+    font-size: 16px;
+    color: #545454;
+    font-family: sans-serif;
+}
+
+.form-wrap select {
+    width: 57%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #545454;
+}
+
+.content p{
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #545454;
+}
+
+#map{
+    height: 400px;
+    width: 100%;
+}
