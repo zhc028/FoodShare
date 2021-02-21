@@ -1,7 +1,7 @@
-#FoodShare
-##Contributors: Alexander Sun, Bella Chen
-##Event: SDHacks 2021 (Sustainability track)
-##Dates: 2/19/21 to 2/20/21
+# FoodShare
+## Contributors: Alexander Sun, Bella Chen
+## Event: SDHacks 2021 (Sustainability track)
+## Dates: 2/19/21 to 2/20/21
 
 The website we built for the SDhacks 2021 sustainability track is called FoodShare, with our theme being centered around combating food wastage. In the United States alone, food waste is estimated at between 30-40 percent of the food supply, costing more than $161 billion dollars annually. We felt that food wastage is an incredibly important part of sustainability; the production of wasted food in the United States is equivalent to the greenhouse emissions of 37 million cars. 
 
@@ -9,7 +9,7 @@ FoodShare is a user friendly website that allows individuals to share the excess
 
 Going forward, we hope to expand the scale of FoodShare, allowing easier communication between core industry components such as grocery stores, restaurants, and farmers. We hope to turn foodshare into something educational and accessible, minimizing the damage food wastage has on the environment whilst contributing to society. 
 
-###Programs/Languages Used:
+### Programs/Languages Used:
 - HTML & CSS (overall layout of website)
 - JavaScript (functionality of website)
 - Firebase (cloud-based database)
