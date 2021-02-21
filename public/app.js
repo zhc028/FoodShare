@@ -42,7 +42,7 @@ function formSubmit(e) {
   }, 7000);
 
   //Form Reset After Submission(7)
-  document.getElementById('registrationform').reset();
+  document.querySelector('#registrationform').reset();
 }
 
 //Send Message to Firebase(4)
