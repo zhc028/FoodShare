@@ -5,6 +5,9 @@
         <title>Foodshare</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="images/favicon.png">
+        <!-- Firebase setup -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
     </head>
     <body>
         <div class="container">
@@ -38,14 +41,15 @@
             <!-- form on right -->
             <div class="form-wrap">
 
-                <form class="" action="index.html" method="post">
+                <!-- <form class="" id="registrationform" action="index.html" method="post"> -->
+                <form action="" method="POST" id="registrationform">
                     <h1>Take a bite out of food waste!</h1>
-                    <input type="text" placeholder="First and Last Name">
-                    <input type="text" placeholder="Phone Number">
-                    <input type="text" placeholder="Address">
-                    <input type="text" placeholder="Food Name">
-                    <label for="food_type">Select a food type: </label>
-                    <select id="food_type" name="food_type">
+                    <input type="text" id="userFullName" placeholder="First and Last Name">
+                    <input type="text" id="userPhone" placeholder="Phone Number">
+                    <input type="text" id="userAddress" placeholder="Address">
+                    <input type="text" id="userFoodName" placeholder="Food Name">
+                    <label for="userFoodType">Select a food type: </label>
+                    <select id="userFoodType" name="food_type">
                         <option value="Hot Meal">Hot Meal</option>
                         <option value="Cold Meal">Cold Meal</option>
                         <option value="Produce">Produce</option>
@@ -53,18 +57,30 @@
                         <option value="Canned/Boxed">Canned/Boxed</option>
                         <option value="Other">Other</option>
                     </select>
-                    <button type="button" name="button">Submit</button>
+                    <!--<button type="button" id="submit" name="button" sendMessage()>Submit</button> -->
+                    <button type="submit" id="submit" sendMessage()>Submit</button>
                 </form>
-
             </div>
 
+            <!-- Autocomplete address-->
+            <script>
+                var searchInput = 'userAddress';
+                function initAutocomplete() {
+                    var autocomplete;
+                    autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+                        types: ['geocode'],
+                    });
+                    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+                        var near_place = autocomplete.getPlace();
+                    });
+                }
+            </script>
+
         </div>
-
-<!-- Firebase setup -->
-</script>
-<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
-
-
+        <script src="./app.js"></script>
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFZXLNj0exYOlKq2aSYh3BPcshAeQjlNg&callback=initAutocomplete&libraries=places&v=weekly"
+      async
+    ></script>
     </body>
 </html>
