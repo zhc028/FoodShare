@@ -18,18 +18,10 @@
                 </nav>
             </div>
 
+            <!-- text on left side -->
             <div class="content">
                 <h1>Hello! <br>Welcome to FoodShare.</h1>
                 <span style="font-family:Geneva">
-                    <!-- Do we need this?
-                    <h2>Here are the facts:</h2>
-                    <ul>
-                        <li>Americans discard nearly 40 tons of food every year.</li>
-                        <li>30-40% of the US food supply is wasted.</li>
-                        <li>Food is the single largest component taking up space inside US landfills.</li>
-                    </ul>
-                    <h2>Where do we go from here?</h2>
-                    -->
                     <p>With FoodShare, we hope to reduce food waste by reallocating it to those who need it the most.
                     </p>
                     <p><i>Do you have groceries in the fridge that you don't plan on using?
@@ -43,29 +35,7 @@
                 </span>
             </div>
 
-            <form action="foods.php" method="post">
-                <div>
-                    <label for="">First and Last Name</label>
-                    <input type="text" name="name" id="inputName">
-                </div>
-                <div>
-                    <label for="">Address</label>
-                    <input type="text" id="address" value="">
-                    <script>
-                        var addressInput = document.getElementById('address');
-                        localStorage.setItem('address', 'addressInput');
-                    </script>
-                </div>
-                <div>
-                    <label for="">Food Type</label> <!-- maybe a drop-down menu here? or use Spoonacular API to generate a searchable food list -->
-                    <input type="text" name="food_type" value="">
-                </div>
-                <button type="button" name="button">Submit</button>
-            </form>
-
-
-
-
+            <!-- form on right -->
             <div class="form-wrap">
 
                 <form class="" action="index.html" method="post">
@@ -90,6 +60,11 @@
 
         </div>
 
+<!-- Firebase setup -->
 </script>
+<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
+
+
     </body>
 </html>
